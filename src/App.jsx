@@ -1,12 +1,12 @@
 
 import './App.css'
-import Pointer from './components/managingState/Pointer'
+import Form from './components/managingState/Form'
 
 function App() {
 
   return (
     <>
-      <Pointer></Pointer>
+      <Form></Form>
     </>
   )
 }
