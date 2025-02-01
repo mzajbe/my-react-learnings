@@ -1,5 +1,6 @@
 // https://react.dev/learn/choosing-the-state-structure
 
+
 import { useState } from "react";
 
 const Form = () => {
@@ -22,6 +23,9 @@ const Form = () => {
       },
     ]);
   };
+
+  console.log(inputs);
+  
 
   //input.push will change on the main array. so, it is not good practice.
   //   we should create a new array
