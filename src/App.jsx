@@ -1,12 +1,12 @@
 
 import './App.css'
-import Form from './components/managingState/Form'
+import Counter from './practiceProblem/counter/Counter'
 
 function App() {
 
   return (
     <>
-      <Form></Form>
+      <Counter></Counter>
     </>
   )
 }

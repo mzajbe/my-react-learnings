@@ -2,7 +2,7 @@
 // https://react.dev/learn/choosing-the-state-structure
 
 import { useState } from "react";
-let a= 10;
+
 
 const Pointer = () => {
   //   const [x, setX] = useState(0);
