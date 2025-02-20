@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-<style></style>;
+
 
 const WriteSomethingToDisplay = () => {
   const [massage, setMassage] = useState("");
@@ -38,6 +38,10 @@ const WriteSomethingToDisplay = () => {
       >
         {displayMessage}
       </div>
+
+      <button onClick={()=>{
+        setDisplayMessage("");
+      }}>Clear display</button>
     </div>
   );
 };
