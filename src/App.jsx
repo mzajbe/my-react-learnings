@@ -1,12 +1,12 @@
 
 import './App.css'
-import Counter from './practiceProblem/counter/Counter'
+import WriteSomethingToDisplay from './practiceProblem/WriteSomethingToDisplay'
 
 function App() {
 
   return (
     <>
-      <Counter></Counter>
+      <WriteSomethingToDisplay></WriteSomethingToDisplay>
     </>
   )
 }

@@ -29,7 +29,7 @@ const Counter = () => {
         style={{
           marginTop: "10px",
           marginLeft: "30px",
-          border: "2px solid blue",
+          border: "2px solid green",
           padding: "20px",
           height: "15px",
 
