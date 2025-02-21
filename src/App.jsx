@@ -1,12 +1,17 @@
 
 import './App.css'
-import WriteSomethingToDisplay from './practiceProblem/WriteSomethingToDisplay'
+// import ProposalComponent from './components/Demo'
+import Index from './components/DemoLovable'
+
+
 
 function App() {
 
   return (
     <>
-      <WriteSomethingToDisplay></WriteSomethingToDisplay>
+    
+    {/* <ProposalComponent></ProposalComponent> */}
+    <Index></Index>
     </>
   )
 }
