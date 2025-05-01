@@ -1,12 +1,13 @@
 
 import './App.css'
-import Form from './components/managingState/Form'
+import TravelPlan from './components/managingState/avoidDeeplyNestedState/TravelPlan'
+
 
 function App() {
 
   return (
     <>
-      <Form></Form>
+      <TravelPlan></TravelPlan>
     </>
   )
 }
