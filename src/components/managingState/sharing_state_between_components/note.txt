@@ -1,0 +1,25 @@
+q. what is single source of truth?
+a. Single source of truth (SSOT) is a concept in software development and data management that refers to the practice of structuring information models and associated schemata such that every data element is stored exactly once. This means that there is one authoritative source for each piece of data, which helps to eliminate redundancy and inconsistency in data storage and retrieval. The goal of SSOT is to ensure that all stakeholders have access to the same, up-to-date information, reducing confusion and errors caused by having multiple versions of the same data.
+
+
+q. what is the difference between state and props in react?
+a. In React, both state and props are used to manage data in components, but they serve different purposes and have different characteristics:
+1. State:
+   - State is a built-in object that is used to manage the local state of a component.
+   - It is mutable, meaning it can be changed or updated within the component.
+   - State is managed within the component itself and can be modified using the setState() method (or the useState hook in functional components).
+   - Changes to state trigger a re-render of the component, allowing it to reflect the updated data.
+
+
+2. Props:
+   - Props (short for properties) are used to pass data from a parent component to a child component.
+   - Props are immutable, meaning they cannot be changed by the child component that receives them.
+   - Props are set by the parent component and can be accessed in the child component using this.props (or props in functional components).
+   - Changes to props do not trigger a re-render of the child component unless the parent component re-renders and passes new props.
+
+
+-> react maintain one way data flow
+
+q. what is controlled component?
+a. A controlled component in React is a component that does not maintain its own internal state for form elements (like input, textarea, or select). Instead, the component's value is controlled by React through props. This means that the component receives its current value and any changes to that value from its parent component via props, and it notifies the parent component of any changes through callback functions (usually event handlers).
+This allows the parent component to manage the state of the controlled component, making it easier to handle form data and validation in a consistent manner.

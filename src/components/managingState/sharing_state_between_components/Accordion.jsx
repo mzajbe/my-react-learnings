@@ -5,10 +5,6 @@ const Accordion = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleActive = () => {
-    setIsActive(!isActive);
-  };
-
 
   return (
     <div>
