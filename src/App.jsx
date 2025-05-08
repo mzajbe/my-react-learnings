@@ -1,15 +1,15 @@
+import React from "react";
+import "./App.css";
+import Accordion from "./components/managingState/sharing_state_between_components/Accordion";
 
-import './App.css'
-import TravelPlan from './components/managingState/avoidDeeplyNestedState/TravelPlan'
 
 
 function App() {
-
   return (
     <>
-      <TravelPlan></TravelPlan>
+      <Accordion></Accordion>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
