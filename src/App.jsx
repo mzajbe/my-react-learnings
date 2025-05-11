@@ -1,13 +1,17 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./App.css";
-import Accordion from "./components/managingState/sharing_state_between_components/Accordion";
+
+import Counter from "./components/managingState/Preserving and Resetting State/Counter";
+import TabSwitcher from "./components/managingState/Preserving and Resetting State/practice questions/problem1/TabSwitcher";
 
 
 
 function App() {
   return (
     <>
-      <Accordion></Accordion>
+    <h1>Learning React</h1>
+    <TabSwitcher></TabSwitcher>
     </>
   );
 }
