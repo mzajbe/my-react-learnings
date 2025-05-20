@@ -1,7 +1,6 @@
 
 import './App.css'
-// import ProposalComponent from './components/Demo'
-import Index from './components/DemoLovable'
+
 
 
 
@@ -9,9 +8,9 @@ function App() {
 
   return (
     <>
+    <h1> retun something</h1>
+    console.log('console');
     
-    {/* <ProposalComponent></ProposalComponent> */}
-    <Index></Index>
     </>
   )
 }
