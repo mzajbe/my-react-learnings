@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 
-const Task = ({ task, onChangeTask }) => {
+const Task = ({ task, onChangeTask,onDeleteTask }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   let taskContent;
@@ -34,9 +34,14 @@ const Task = ({ task, onChangeTask }) => {
   return (
     <li>
       <label>
-        <input type="checkbox" />
+        <input type="checkbox" checked={task.done} onChange={(e)=>{
+            onChangeTask({
+                ...task,
+                done: e.target.checked,
+            },)
+        }}/>
         {taskContent}
-        <button>Delete</button>
+        <button onClick={()=>onDeleteTask(task.id)}>Delete</button>
       </label>
     </li>
   );
