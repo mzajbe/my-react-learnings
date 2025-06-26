@@ -1,16 +1,38 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import AddTask from "./components/AddTask";
+import TaskList from "./components/TaskList";
+import { initialTasks } from "./data/tasks";
 
 
 
 
 
 function App() {
+
+  const [tasks,setTasks] = useState(initialTasks);
+
+
+
+  const handleChangeTask = (task) => {
+    const nextTasks = tasks.map((t)=>{
+      if(t.id === task.id){
+        return task;
+      }else{
+        return t;
+      }
+    })
+
+    setTasks(nextTasks);
+  }
+
   return (
     <>
-    <h1>Learning React</h1>
-    <h1>new branch code</h1>
+    <h1>Prague itinerary</h1>
+    <AddTask ></AddTask>
+    <TaskList tasks={tasks} onChangeTask={handleChangeTask}></TaskList>
+    
     
     </>
   );
